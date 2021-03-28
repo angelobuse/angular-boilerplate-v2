@@ -1,12 +1,14 @@
 <div class="row">
   <div class="col-md-12">
     <label for="account-name"><strong>Add new account</strong></label>
-    <input type="text" name="" id="" class="form-control">
+    <input type="text" name="" id="" class="form-control" #name>
     <br>
-    <select name="" id="" class="form-control">
+    <select name="" id="" class="form-control" #status>
       <option value="active">Active</option>
       <option value="inactive">Inactive</option>
       <option value="hidden">Hidden</option>
     </select>
+    <br>
+    <button class="btn btn-info" (click)="addAccount()">Add account</button>
   </div>
 </div>
